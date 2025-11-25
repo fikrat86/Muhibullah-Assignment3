@@ -1,5 +1,5 @@
-# Use a lightweight Python image
-FROM python:3.9-slim
+# Use a lightweight Python image from AWS ECR Public to avoid Docker Hub rate limits
+FROM public.ecr.aws/docker/library/python:3.9-slim
 
 # Set working directory
 WORKDIR /app
